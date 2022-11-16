@@ -3,7 +3,7 @@
 
 <template>
   <header flex="~" items-center justify-around>
-    <div>Yuusheng</div>
+    <a href="/">Yuusheng</a>
 
     <div flex>
       <a href="/blog" class="navigate-btn">
