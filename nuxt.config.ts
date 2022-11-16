@@ -11,7 +11,14 @@ export default defineNuxtConfig({
     attributify: true, // enabled `@unocss/preset-attributify`,
 
     // core options
-    shortcuts: [],
+    shortcuts: [{
+      'navigate-btn': 'mx2 my3',
+    }],
     rules: [],
+  },
+  content: {
+    highlight: {
+      theme: 'github-light',
+    },
   },
 })
