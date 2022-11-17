@@ -15,7 +15,7 @@
       <a href="/project" class="navigate-btn">
         project
       </a>
-      <a href="/❤" class="navigate-btn">
+      <a href="/days" class="navigate-btn">
         ❤
       </a>
     </div>
