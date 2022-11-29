@@ -5,5 +5,5 @@ const date = Math.floor((new Date().getTime() - pre) / oneDay)
 </script>
 
 <template>
-  ❤ it has been {{ date }} days
+  ❤ has been {{ date }} days
 </template>

@@ -3,6 +3,7 @@ export default defineNuxtConfig({
   modules: [
     '@unocss/nuxt',
     '@nuxt/content',
+    '@vueuse/nuxt',
   ],
   unocss: {
     // presets
@@ -12,7 +13,7 @@ export default defineNuxtConfig({
 
     // core options
     shortcuts: [{
-      'navigate-btn': 'mx2 my3',
+      'navigate-btn': 'mx2 my3 cursor-pointer',
     }],
     rules: [],
   },
