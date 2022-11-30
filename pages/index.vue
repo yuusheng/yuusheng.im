@@ -2,15 +2,17 @@
 </script>
 
 <template>
-  <article class="article font-sans">
-    <h1>Hi!</h1>
-    <p>
+  <article m="x10 t20" font-sans>
+    <h1 text-4xl mb3>
+      Hi!
+    </h1>
+    <h2 text-3xl mb4>
       I'm
-      <code p="x1 y0.5" bg="gray-2/60" text-black rounded>
+      <code p="x1 y0.5" bg="gray-2/60" text-2xl text-black rounded>
         <span class="code">`</span>余声里<span class="code">`</span>
       </code>
       or yuusheng
-    </p>
+    </h2>
     <p>A front-end developer / music lover / amateur photographer / ...</p>
     <p>Volunteer to be a slash youth</p>
   </article>
@@ -19,12 +21,9 @@
 <style scoped>
 .code {
   color: #DB6262;
-  font-size: 22px;
-}
-.article {
-  font-family: 'Nunito';
+  margin: 0 3px;
 }
 p {
-  margin: 2px 0;
+  margin-top: 0.5rem;
 }
 </style>
