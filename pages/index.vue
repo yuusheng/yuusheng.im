@@ -11,10 +11,10 @@
       <code p="x1 y0.5" bg="gray-2/60" text-2xl text-black rounded>
         <span class="code">`</span>余声里<span class="code">`</span>
       </code>
-      or yuusheng
+      or yuusheng.
     </h2>
     <p>A front-end developer / music lover / amateur photographer / ...</p>
-    <p>Volunteer to be a slash youth</p>
+    <p>Volunteer to be a slash youth.</p>
   </article>
 </template>
 
