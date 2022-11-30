@@ -10,7 +10,12 @@ export default defineNuxtConfig({
     uno: true, // enabled `@unocss/preset-uno`
     icons: true, // enabled `@unocss/preset-icons`
     attributify: true, // enabled `@unocss/preset-attributify`,
-
+    webFonts: {
+      provider: 'google',
+      fonts: {
+        sans: 'Nunito Sans',
+      },
+    },
     // core options
     shortcuts: [{
       'navigate-btn': 'mx2 my3 cursor-pointer',

@@ -1,9 +1,8 @@
-<script setup>
-
+<script setup lang="ts">
 </script>
 
 <template>
-  <article>
+  <article class="article font-sans">
     <h1>Hi!</h1>
     <p>
       My name is
@@ -22,8 +21,8 @@
   color: #DB6262;
   font-size: 22px;
 }
-article {
-  font-family: 'Nunito Sans', sans-serif;
+.article {
+  font-family: 'Nunito';
 }
 p {
   margin: 2px 0;

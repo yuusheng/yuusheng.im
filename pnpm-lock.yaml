@@ -1,6 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
+  '@iconify-json/majesticons': ^1.1.4
   '@nuxt/content': ^2.2.2
   '@unocss/nuxt': ^0.46.5
   '@vueuse/core': ^9.6.0
@@ -11,6 +12,7 @@ specifiers:
   typescript: ^4.9.3
 
 devDependencies:
+  '@iconify-json/majesticons': registry.npmmirror.com/@iconify-json/majesticons/1.1.4
   '@nuxt/content': registry.npmmirror.com/@nuxt/content/2.2.2
   '@unocss/nuxt': 0.46.5
   '@vueuse/core': registry.npmmirror.com/@vueuse/core/9.6.0
@@ -361,16 +363,12 @@ packages:
     resolution: {integrity: sha512-ZnQMnLV4e7hDlUvw8H+U8ASL02SS2Gn6+9Ac3wGGLIe7+je2AeAOxPY+izIPJDfFDb7eDjev0Us8MO1iFRN8hA==}
     dev: true
 
-  /@iconify/types/2.0.0:
-    resolution: {integrity: sha512-+wluvCrRhXrhyOmRDJ3q8mux9JkKy5SJ/v8ol2tu4FVjyYvtEzkc/3pK15ET6RKg4b4w4BmTk1+gsCUhf21Ykg==}
-    dev: true
-
   /@iconify/utils/2.0.1:
     resolution: {integrity: sha512-t8IyICk25wgZL4YKn/2kYfjG5MGA6EWZlaUJZ1OEIku4V+kX9V900T5E4HIqS3hLyD6/RJET0zY4vxO9pHLHHw==}
     dependencies:
       '@antfu/install-pkg': 0.1.1
       '@antfu/utils': 0.5.2
-      '@iconify/types': 2.0.0
+      '@iconify/types': registry.npmmirror.com/@iconify/types/2.0.0
       debug: 4.3.4
       kolorist: 1.6.0
       local-pkg: 0.4.2
@@ -724,7 +722,7 @@ packages:
       '@unocss/preset-tagify': 0.46.5
       '@unocss/preset-typography': 0.46.5
       '@unocss/preset-uno': 0.46.5
-      '@unocss/preset-web-fonts': 0.46.5
+      '@unocss/preset-web-fonts': registry.npmmirror.com/@unocss/preset-web-fonts/0.46.5
       '@unocss/preset-wind': 0.46.5
       '@unocss/reset': 0.46.5
       '@unocss/vite': 0.46.5
@@ -777,13 +775,6 @@ packages:
       '@unocss/core': 0.46.5
       '@unocss/preset-mini': 0.46.5
       '@unocss/preset-wind': 0.46.5
-    dev: true
-
-  /@unocss/preset-web-fonts/0.46.5:
-    resolution: {integrity: sha512-ITOtD9AeklSqsVzBlK6wKbABQnD1o9wubN4bGkz7cd0G0GEt7YkW9dYwmXPYqo9Stoga92MJPy/Z2mxKT0ejVw==}
-    dependencies:
-      '@unocss/core': 0.46.5
-      ohmyfetch: 0.4.21
     dev: true
 
   /@unocss/preset-wind/0.46.5:
@@ -1004,7 +995,7 @@ packages:
     resolution: {integrity: sha512-8SFQbg/0hQ9xy3UNTB0YEnsNBbWfhf7RtnzpL7TkBiTBRfrQ9Fxcnz7VJsleJpyp6rVLvXiuORqjlHi5q+PYuA==}
     engines: {node: '>=10.16.0'}
     dependencies:
-      streamsearch: 1.1.0
+      streamsearch: registry.npmmirror.com/streamsearch/1.1.0
     dev: true
 
   /c12/0.2.13:
@@ -2976,11 +2967,6 @@ packages:
     resolution: {integrity: sha512-3H20QlwQsSm2OvAxWIYhs+j01MzzqwMwGiiO1NQaJYZgJZFPuAbf95/DiKRBSTYIJ2FeGUc+B/6mPGcWP9dO3Q==}
     dev: true
 
-  /streamsearch/1.1.0:
-    resolution: {integrity: sha512-Mcc5wHehp9aXz1ax6bZUyY5afg9u2rv5cqQI3mRrYkGC8rW2hM02jWuwjtL++LS5qinSyhj2QfLyNsuc+VsExg==}
-    engines: {node: '>=10.0.0'}
-    dev: true
-
   /string.prototype.trimend/1.0.6:
     resolution: {integrity: sha512-JySq+4mrPf9EsDBEDYMOb/lM7XQLulwg5R/m1r0PXEFqrV0qHvl58sdTilSXtKOflCsK2E8jxf+GKC0T07RWwQ==}
     dependencies:
@@ -3230,7 +3216,7 @@ packages:
       '@unocss/preset-tagify': 0.46.5
       '@unocss/preset-typography': 0.46.5
       '@unocss/preset-uno': 0.46.5
-      '@unocss/preset-web-fonts': 0.46.5
+      '@unocss/preset-web-fonts': registry.npmmirror.com/@unocss/preset-web-fonts/0.46.5
       '@unocss/preset-wind': 0.46.5
       '@unocss/reset': 0.46.5
       '@unocss/transformer-attributify-jsx': 0.46.5
@@ -3783,6 +3769,20 @@ packages:
     requiresBuild: true
     dev: true
     optional: true
+
+  registry.npmmirror.com/@iconify-json/majesticons/1.1.4:
+    resolution: {integrity: sha512-oWH6VDvVXfvdkp0i6kFtHMx+w2RG4OfvuMOBZ2lAOK1BuUhKTTMAAdhPrtV6+VJnUh97rjiC370D8wMWK93wQQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@iconify-json/majesticons/-/majesticons-1.1.4.tgz}
+    name: '@iconify-json/majesticons'
+    version: 1.1.4
+    dependencies:
+      '@iconify/types': registry.npmmirror.com/@iconify/types/2.0.0
+    dev: true
+
+  registry.npmmirror.com/@iconify/types/2.0.0:
+    resolution: {integrity: sha512-+wluvCrRhXrhyOmRDJ3q8mux9JkKy5SJ/v8ol2tu4FVjyYvtEzkc/3pK15ET6RKg4b4w4BmTk1+gsCUhf21Ykg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@iconify/types/-/types-2.0.0.tgz}
+    name: '@iconify/types'
+    version: 2.0.0
+    dev: true
 
   registry.npmmirror.com/@ioredis/commands/1.2.0:
     resolution: {integrity: sha512-Sx1pU8EM64o2BrqNpEO1CNLtKQwyhuXuqyfH7oGKCk+1a33d2r5saW8zNwm3j6BTExtjrv2BxTgzzkMwts6vGg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@ioredis/commands/-/commands-1.2.0.tgz}
@@ -4441,6 +4441,15 @@ packages:
       '@unhead/schema': registry.npmmirror.com/@unhead/schema/1.0.2
       hookable: registry.npmmirror.com/hookable/5.4.2
       vue: registry.npmmirror.com/vue/3.2.45
+    dev: true
+
+  registry.npmmirror.com/@unocss/preset-web-fonts/0.46.5:
+    resolution: {integrity: sha512-ITOtD9AeklSqsVzBlK6wKbABQnD1o9wubN4bGkz7cd0G0GEt7YkW9dYwmXPYqo9Stoga92MJPy/Z2mxKT0ejVw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@unocss/preset-web-fonts/-/preset-web-fonts-0.46.5.tgz}
+    name: '@unocss/preset-web-fonts'
+    version: 0.46.5
+    dependencies:
+      '@unocss/core': 0.46.5
+      ohmyfetch: 0.4.21
     dev: true
 
   registry.npmmirror.com/@vercel/nft/0.22.1:

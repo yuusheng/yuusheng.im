@@ -9,7 +9,7 @@ const router = useRouter()
 
 <template>
   <header flex="~" my3 items-center justify-around>
-    <a class="avatar" :class="isDark ? 'dark-avatar' : 'light-avatar'" @click="router.push('/')" />
+    <a class="avatar" @click="router.push('/')" />
 
     <div flex>
       <a class="navigate-btn" @click="router.push('blog')">
@@ -21,11 +21,11 @@ const router = useRouter()
       <a class="navigate-btn" @click="router.push('project')">
         project
       </a>
-      <a class="navigate-btn" @click="router.push('days')">
-        ❤
+      <a class="navigate-btn pt1" @click="router.push('days')">
+        <div i-majesticons-heart hover:i-majesticons-heart-line />
       </a>
-      <a class="navigate-btn" @click="toggleDark()">
-        切换
+      <a class="navigate-btn pt1" @click="toggleDark()">
+        <div i-majesticons-moon hover:i-majesticons-moon-line dark:i-majesticons-sun hover:dark:i-majesticons-sun-line />
       </a>
     </div>
   </header>
@@ -38,11 +38,9 @@ const router = useRouter()
   background-size: contain;
   background-repeat: no-repeat;
   cursor: pointer;
-}
-.light-avatar {
   background-image: url(../assets/avatar.svg);
 }
-.dark-avatar {
+.dark .avatar {
   background-image: url(../assets/avatar-dark.svg);
 }
 </style>
