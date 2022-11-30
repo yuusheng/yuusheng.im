@@ -10,13 +10,9 @@ useHead({
 
 <template>
   <Header />
-  <div flex justify-center>
+  <main lt-sm:px10 px30>
     <NuxtLayout>
       <NuxtPage />
     </NuxtLayout>
-  </div>
+  </main>
 </template>
-
-<style>
-@import './index.css';
-</style>

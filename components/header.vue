@@ -8,12 +8,12 @@ const router = useRouter()
 </script>
 
 <template>
-  <header flex="~" my3 items-center justify-around>
+  <header flex="~" lt-sm:mx10 m="x30 y3" items-center justify-between>
     <a class="avatar" @click="router.push('/')" />
 
-    <div flex>
-      <a class="navigate-btn" @click="router.push('blog')">
-        blog
+    <div flex lt-sm:hidden initial>
+      <a class="navigate-btn" @click="router.push('posts')">
+        posts
       </a>
       <a class="navigate-btn" @click="router.push('photo')">
         photo
@@ -27,6 +27,10 @@ const router = useRouter()
       <a class="navigate-btn pt1" @click="toggleDark()">
         <div i-majesticons-moon hover:i-majesticons-moon-line dark:i-majesticons-sun hover:dark:i-majesticons-sun-line />
       </a>
+    </div>
+
+    <div navigate-btn sm:hidden initial>
+      <div cursor-pointer i-majesticons-more-menu-vertical />
     </div>
   </header>
 </template>

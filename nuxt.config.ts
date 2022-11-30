@@ -5,6 +5,9 @@ export default defineNuxtConfig({
     '@nuxt/content',
     '@vueuse/nuxt',
   ],
+  css: [
+    '/index.css',
+  ],
   unocss: {
     // presets
     uno: true, // enabled `@unocss/preset-uno`

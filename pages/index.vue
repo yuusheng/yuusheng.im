@@ -5,13 +5,13 @@
   <article class="article font-sans">
     <h1>Hi!</h1>
     <p>
-      My name is
-      <span p="x1 y0.5" bg="gray-3/60" rounded>
+      I'm
+      <code p="x1 y0.5" bg="gray-2/60" text-black rounded>
         <span class="code">`</span>余声里<span class="code">`</span>
-      </span>
-      / yuusheng
+      </code>
+      or yuusheng
     </p>
-    <p>A front-end developer / amateur photographer / ...</p>
+    <p>A front-end developer / music lover / amateur photographer / ...</p>
     <p>Volunteer to be a slash youth</p>
   </article>
 </template>
