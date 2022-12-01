@@ -66,4 +66,7 @@ a:hover {
   background: rgba(230, 230, 230, 0.5);
   outline: solid 1.6px rgba(186, 186, 186, 0.5);
 }
+i:hover {
+  cursor: none;
+}
 </style>
