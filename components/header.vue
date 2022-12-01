@@ -8,7 +8,7 @@ const router = useRouter()
 </script>
 
 <template>
-  <header flex="~" lt-sm:mx10 m="x30 y3" items-center justify-between>
+  <header flex="~" text="[1.15rem]" lt-sm:mx10 m="x30 y5" items-center justify-between>
     <div relative>
       <div class="avatar" @click="router.push('/')" />
     </div>
@@ -39,11 +39,11 @@ const router = useRouter()
 
 <style scoped>
 .avatar {
-  width: 3rem;
-  height: 3rem;
+  width: 3.5rem;
+  height: 3.5rem;
   position: absolute;
-  top: -1.5rem;
-  left: -1.5rem;
+  top: -1.75rem;
+  left: -1.75rem;
   background-size: 100%;
   background-repeat: no-repeat;
   cursor: none;
@@ -53,6 +53,8 @@ const router = useRouter()
 .avatar:hover {
   transform: scale(1.2);
   transition: transform 120ms ease-in-out;
+  outline: solid 1.6px rgba(186, 186, 186, 0.5);
+  border-radius: 100%;
 }
 
 .dark .avatar {
@@ -61,6 +63,7 @@ const router = useRouter()
 
 a:hover {
   cursor: none;
-  background: rgba(230, 229, 229, 0.5);
+  background: rgba(241, 241, 241, 0.8);
+  outline: solid 1.6px rgba(186, 186, 186, 0.5);
 }
 </style>

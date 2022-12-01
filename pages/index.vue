@@ -10,12 +10,12 @@ const catalogue = (navigation.value || []).map(v => ({
 
 <template>
   <article m="x10 t20">
-    <h1 text-5xl mb3>
+    <h1 text-6xl mb3>
       Hi!
     </h1>
-    <h2 text-3xl mb4>
+    <h2 text-4xl mb4>
       I'm
-      <code p="x1 y0.5" bg="gray-2/60" text-2xl text-black rounded>
+      <code p="x1 y0.5" bg="gray-2/60" text-3xl text-black rounded>
         <span class="code">`</span>余声里<span class="code">`</span>
       </code>
       or yuushèng.
@@ -33,6 +33,6 @@ const catalogue = (navigation.value || []).map(v => ({
 }
 p {
   margin-top: 0.6rem;
-  font-size: 18px;
+  font-size: 20px;
 }
 </style>
