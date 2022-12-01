@@ -63,7 +63,7 @@ const router = useRouter()
 
 a:hover {
   cursor: none;
-  background: rgba(241, 241, 241, 0.8);
+  background: rgba(230, 230, 230, 0.5);
   outline: solid 1.6px rgba(186, 186, 186, 0.5);
 }
 </style>
