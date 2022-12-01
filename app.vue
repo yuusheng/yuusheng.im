@@ -3,7 +3,8 @@ useHead({
   bodyAttrs: {
     class: ['dark:bg-black', 'dark:color-gray-300'],
   },
-  link: [{ rel: 'icon', href: '/avatar.png' },
+  link: [
+    { rel: 'icon', href: '/avatar.png' },
   ],
 })
 </script>

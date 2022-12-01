@@ -2,7 +2,7 @@
 </script>
 
 <template>
-  <article m="x10 t20" font-sans>
+  <article m="x10 t20">
     <h1 text-4xl mb3>
       Hi!
     </h1>
@@ -19,6 +19,9 @@
 </template>
 
 <style scoped>
+article {
+  font-family: 'Poppins', sans-serif;
+}
 .code {
   color: #DB6262;
   margin: 0 3px;

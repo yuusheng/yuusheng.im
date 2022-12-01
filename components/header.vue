@@ -21,11 +21,11 @@ const router = useRouter()
       <a class="navigate-btn" @click="router.push('project')">
         project
       </a>
-      <a class="navigate-btn pt1" @click="router.push('days')">
-        <div i-majesticons-heart hover:i-majesticons-heart-line />
+      <a class="navigate-btn" @click="router.push('days')">
+        <i i-majesticons-heart hover:i-majesticons-heart-line />
       </a>
-      <a class="navigate-btn pt1" @click="toggleDark()">
-        <div i-majesticons-moon hover:i-majesticons-moon-line dark:i-majesticons-sun hover:dark:i-majesticons-sun-line />
+      <a class="navigate-btn" @click="toggleDark()">
+        <i i-majesticons-moon hover:i-majesticons-moon-line dark:i-majesticons-sun hover:dark:i-majesticons-sun-line />
       </a>
     </div>
 
