@@ -2,10 +2,7 @@
   border: 0;
   margin: 0;
   padding: 0;
-}
-
-html {
-  font-family: 'Outfit';
+  cursor: url('assets/img/cursor.svg'), default;
 }
 
 a,a:link,a:visited,a:hover,a:active{

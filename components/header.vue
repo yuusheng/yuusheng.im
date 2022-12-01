@@ -9,7 +9,9 @@ const router = useRouter()
 
 <template>
   <header flex="~" lt-sm:mx10 m="x30 y3" items-center justify-between>
-    <a class="avatar" @click="router.push('/')" />
+    <div relative>
+      <div class="avatar" @click="router.push('/')" />
+    </div>
 
     <div flex lt-sm:hidden initial>
       <a class="navigate-btn" @click="router.push('posts')">
@@ -39,12 +41,26 @@ const router = useRouter()
 .avatar {
   width: 3rem;
   height: 3rem;
-  background-size: contain;
+  position: absolute;
+  top: -1.5rem;
+  left: -1.5rem;
+  background-size: 100%;
   background-repeat: no-repeat;
-  cursor: pointer;
+  cursor: none;
   background-image: url(../assets/avatar.svg);
 }
+
+.avatar:hover {
+  transform: scale(1.2);
+  transition: transform 120ms ease-in-out;
+}
+
 .dark .avatar {
   background-image: url(../assets/avatar-dark.svg);
+}
+
+a:hover {
+  cursor: none;
+  background: rgba(230, 229, 229, 0.5);
 }
 </style>

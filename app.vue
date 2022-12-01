@@ -1,11 +1,16 @@
 <script setup lang="ts">
 useHead({
-  bodyAttrs: {
-    class: ['dark:bg-black', 'dark:color-gray-300'],
-  },
+  title: 'yuushèng',
   link: [
-    { rel: 'icon', href: '/avatar.png' },
+    { rel: 'icon', href: '/favicon.png' },
   ],
+  meta: [
+    { name: 'author', content: 'yuusheng' },
+    { name: 'description', content: 'yuusheng, developer, posts, frontend' },
+  ],
+  bodyAttrs: {
+    class: ['dark:bg-black', 'dark:color-gray-300', 'font-sans'],
+  },
 })
 </script>
 

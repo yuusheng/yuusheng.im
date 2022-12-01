@@ -18,7 +18,7 @@ const catalogue = (navigation.value || []).map(v => ({
       <code p="x1 y0.5" bg="gray-2/60" text-2xl text-black rounded>
         <span class="code">`</span>余声里<span class="code">`</span>
       </code>
-      or yuusheng.
+      or yuushèng.
     </h2>
     <p>A front-end developer / music lover / amateur photographer / ...</p>
     <p>Volunteer to be a slash youth.</p>
@@ -32,6 +32,7 @@ const catalogue = (navigation.value || []).map(v => ({
   color: #DB6262;
 }
 p {
-  margin-top: 0.5rem;
+  margin-top: 0.6rem;
+  font-size: 18px;
 }
 </style>

@@ -27,7 +27,7 @@ export default defineNuxtConfig({
 
     // core options
     shortcuts: [{
-      'navigate-btn': 'mx2 my3 cursor-pointer',
+      'navigate-btn': 'px2 pt1 pb1.5 my2 rounded',
     }],
     rules: [],
   },

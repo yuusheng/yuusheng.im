@@ -1,5 +1,6 @@
 {
   "private": true,
+  "author": "yuushèng <hi@yuusheng.im>",
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
