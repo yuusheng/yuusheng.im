@@ -4,24 +4,7 @@ export default defineNuxtConfig({
     '@unocss/nuxt',
     '@nuxt/content',
     '@vueuse/nuxt',
-    '@nuxtjs/google-fonts',
   ],
-  googleFonts: {
-    text: 'yuusheng',
-    families: {
-      'Poppins': true,
-      'Josefin+Sans': true,
-      'Lato': [100, 300],
-      'Raleway': {
-        wght: [100, 400],
-        ital: [100],
-      },
-    },
-    display: 'swap',
-    preload: true,
-    download: true,
-    prefetch: true,
-  },
   css: [
     '/index.css',
   ],
@@ -35,6 +18,13 @@ export default defineNuxtConfig({
         'vertical-align': 'middle',
       },
     }, // enabled `@unocss/preset-icons`
+    webFonts: {
+      fonts: {
+        sans: 'Outfit:400,700',
+      },
+      provider: 'google',
+    },
+
     // core options
     shortcuts: [{
       'navigate-btn': 'mx2 my3 cursor-pointer',

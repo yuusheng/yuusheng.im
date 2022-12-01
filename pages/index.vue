@@ -3,7 +3,7 @@
 
 <template>
   <article m="x10 t20">
-    <h1 text-4xl mb3>
+    <h1 text-5xl mb3>
       Hi!
     </h1>
     <h2 text-3xl mb4>
@@ -19,9 +19,6 @@
 </template>
 
 <style scoped>
-article {
-  font-family: 'Poppins', sans-serif;
-}
 .code {
   color: #DB6262;
   margin: 0 3px;
