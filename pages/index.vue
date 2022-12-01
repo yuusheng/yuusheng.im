@@ -1,4 +1,11 @@
 <script setup lang="ts">
+const { data: navigation } = await useAsyncData('navigation', () => {
+  return fetchContentNavigation()
+})
+const catalogue = (navigation.value || []).map(v => ({
+  title: v._path.replace('/', ''),
+  path: v._path,
+}))
 </script>
 
 <template>
@@ -16,12 +23,13 @@
     <p>A front-end developer / music lover / amateur photographer / ...</p>
     <p>Volunteer to be a slash youth.</p>
   </article>
+
+  <!-- <TitleCardList :posts="catalogue" /> -->
 </template>
 
 <style scoped>
 .code {
   color: #DB6262;
-  margin: 0 3px;
 }
 p {
   margin-top: 0.5rem;
