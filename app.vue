@@ -1,6 +1,6 @@
 <script setup lang="ts">
 useHead({
-  title: 'yuushèng',
+  title: 'yuusheng',
   link: [
     { rel: 'icon', href: '/favicon.png' },
   ],

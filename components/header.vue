@@ -24,10 +24,10 @@ const router = useRouter()
         project
       </a>
       <a class="navigate-btn" @click="router.push('days')">
-        <i i-majesticons-heart hover:i-majesticons-heart-line />
+        <i i-ri-heart-fill hover:i-ri-heart-line />
       </a>
       <a class="navigate-btn" @click="toggleDark()">
-        <i i-majesticons-moon hover:i-majesticons-moon-line dark:i-majesticons-sun hover:dark:i-majesticons-sun-line />
+        <i i-ri-moon-fill hover:i-ri-moon-line dark:i-ri-sun-fill hover:dark:i-ri-sun-line />
       </a>
     </div>
 
