@@ -14,7 +14,7 @@ const contactList = [
       :key="contact.icon"
       :href="contact.link"
       target="_blank"
-      p="x2 t1 b1.5" m="r2.4"
+      p="x1.8 b1" m="r2.4" inline-block text-xl
       class="rounded rect cursor-hover"
     >
       <i :class="contact.icon" /> {{ contact?.title }}
