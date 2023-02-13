@@ -4,6 +4,7 @@ export default defineNuxtConfig({
     '@unocss/nuxt',
     '@nuxt/content',
     '@vueuse/nuxt',
+    '@nuxt/devtools',
   ],
   css: [
     '/index.css',
