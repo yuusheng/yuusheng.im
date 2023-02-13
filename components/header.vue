@@ -14,19 +14,19 @@ const router = useRouter()
     </div>
 
     <div flex lt-sm:hidden initial>
-      <a class="navigate-btn" @click="router.push('posts')">
+      <a href="javascript:void(0);" class="navigate-btn" @click="router.push('posts')">
         posts
       </a>
-      <a class="navigate-btn" @click="router.push('photo')">
+      <a href="javascript:void(0);" class="navigate-btn" @click="router.push('photo')">
         photo
       </a>
-      <a class="navigate-btn" @click="router.push('project')">
+      <a href="javascript:void(0);" class="navigate-btn" @click="router.push('project')">
         project
       </a>
-      <a class="navigate-btn" @click="router.push('days')">
+      <a href="javascript:void(0);" class="navigate-btn" @click="router.push('days')">
         <i i-ri-heart-fill hover:i-ri-heart-line />
       </a>
-      <a class="navigate-btn" @click="toggleDark()">
+      <a href="javascript:void(0);" class="navigate-btn" @click="toggleDark()">
         <i i-ri-moon-fill hover:i-ri-moon-line dark:i-ri-sun-fill hover:dark:i-ri-sun-line />
       </a>
     </div>
