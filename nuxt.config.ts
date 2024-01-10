@@ -4,14 +4,17 @@ export default defineNuxtConfig({
     '@unocss/nuxt',
     '@nuxt/content',
     '@vueuse/nuxt',
-    '@nuxt/devtools',
-  ],
-  css: [
-    '/index.css',
   ],
   content: {
     highlight: {
       theme: 'github-light',
     },
+  },
+  css: [
+    '/index.css',
+  ],
+
+  devtools: {
+    enabled: true,
   },
 })
