@@ -1,5 +1,6 @@
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
+  devtools: { enabled: true },
   modules: [
     '@unocss/nuxt',
     '@nuxt/content',
@@ -11,13 +12,9 @@ export default defineNuxtConfig({
       theme: 'github-light',
     },
   },
+  colorMode: { classSuffix: '' },
   css: [
     '@unocss/reset/tailwind.css',
     '~/styles/post.css',
   ],
-
-  devtools: {
-    enabled: true,
-  },
-  colorMode: { classSuffix: '' },
 })
