@@ -1,10 +1,10 @@
 <script setup lang="ts">
-import { useDark, useToggle } from '@vueuse/core'
-
-const isDark = useDark()
-const toggleDark = useToggle(isDark)
-
 const router = useRouter()
+
+const color = useColorMode()
+function toggleColorMode() {
+  color.preference = color.preference === 'dark' ? 'light' : 'dark'
+}
 </script>
 
 <template>
@@ -14,21 +14,18 @@ const router = useRouter()
     </div>
 
     <div flex lt-sm:hidden initial>
-      <a href="javascript:void(0);" class="navigate-btn" @click="router.push('posts')">
+      <NuxtLink to="/posts" class="navigate-btn">
         posts
-      </a>
-      <a href="javascript:void(0);" class="navigate-btn" @click="router.push('photo')">
+      </NuxtLink>
+      <NuxtLink to="/photo" class="navigate-btn">
         photo
-      </a>
-      <a href="javascript:void(0);" class="navigate-btn" @click="router.push('project')">
+      </NuxtLink>
+      <NuxtLink to="project" class="navigate-btn" @click="router.push('project')">
         project
-      </a>
-      <a href="javascript:void(0);" class="navigate-btn" @click="router.push('days')">
-        <i i-ri-heart-fill hover:i-ri-heart-line />
-      </a>
-      <a href="javascript:void(0);" class="navigate-btn" @click="toggleDark()">
+      </NuxtLink>
+      <button class="navigate-btn" @click="toggleColorMode">
         <i i-ri-moon-fill hover:i-ri-moon-line dark:i-ri-sun-fill hover:dark:i-ri-sun-line />
-      </a>
+      </button>
     </div>
 
     <div navigate-btn sm:hidden initial>

@@ -4,6 +4,7 @@ export default defineNuxtConfig({
     '@unocss/nuxt',
     '@nuxt/content',
     '@vueuse/nuxt',
+    '@nuxtjs/color-mode'
   ],
   content: {
     highlight: {
@@ -11,10 +12,12 @@ export default defineNuxtConfig({
     },
   },
   css: [
-    '/index.css',
+    '@unocss/reset/tailwind.css',
+    '~/styles/post.css',
   ],
 
   devtools: {
     enabled: true,
   },
+  colorMode: { classSuffix: '' },
 })

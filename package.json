@@ -23,5 +23,8 @@
   },
   "eslintConfig": {
     "extends": "@yuusheng"
+  },
+  "dependencies": {
+    "@nuxtjs/color-mode": "^3.3.2"
   }
 }
