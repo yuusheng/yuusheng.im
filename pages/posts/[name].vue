@@ -4,7 +4,7 @@ const path = computed(() => route.params.name as string)
 </script>
 
 <template>
-  <div class="post-container">
+  <article class="post-container scroll-smooth">
     <ContentDoc :path="path" />
-  </div>
+  </article>
 </template>
