@@ -46,27 +46,10 @@ const router = useRouter()
   left: -1.75rem;
   background-size: 100%;
   background-repeat: no-repeat;
-  cursor: none;
   background-image: url(../assets/avatar.svg);
-}
-
-.avatar:hover {
-  transform: scale(1.2);
-  transition: transform 120ms ease-in-out;
-  outline: solid 1.6px rgba(186, 186, 186, 0.5);
-  border-radius: 100%;
 }
 
 .dark .avatar {
   background-image: url(../assets/avatar-dark.svg);
-}
-
-a:hover {
-  cursor: none;
-  background: rgba(230, 230, 230, 0.5);
-  outline: solid 1.6px rgba(186, 186, 186, 0.5);
-}
-i:hover {
-  cursor: none;
 }
 </style>
