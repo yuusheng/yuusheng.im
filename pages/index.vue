@@ -16,11 +16,11 @@ const catalogue = (navigation.value || []).map(v => ({
     <h2 text-4xl mb4>
       I'm
       <code p="x1 y0.5" bg="gray-2/60" text-3xl text-black rounded>
-        <span class="code">`</span>余声里<span class="code">`</span>
+        <span class="code">`</span>Ethan<span class="code">`</span>
       </code>
       or yuusheng.
     </h2>
-    <p>A front-end developer / music lover / amateur photographer / ...</p>
+    <p>A software engineer / music lover / amateur photographer / ...</p>
     <p>Volunteer to be a slash youth.</p>
     <ContactRect />
   </article>
