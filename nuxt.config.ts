@@ -5,7 +5,8 @@ export default defineNuxtConfig({
     '@unocss/nuxt',
     '@nuxt/content',
     '@vueuse/nuxt',
-    '@nuxtjs/color-mode'
+    '@nuxtjs/color-mode',
+    'dayjs-nuxt',
   ],
   content: {
     highlight: {
