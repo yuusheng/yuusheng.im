@@ -9,16 +9,15 @@ useHead({
     { name: 'description', content: 'yuusheng, developer, posts, frontend' },
   ],
   bodyAttrs: {
-    class: ['dark:bg-black', 'dark:color-gray-300', 'font-sans'],
+    class: ['dark:bg-black', 'dark:color-warm-gray-50', 'font-sans'],
   },
 })
 </script>
 
 <template>
   <Header />
-  <main lt-sm:px5 px30>
-    <NuxtLayout>
-      <NuxtPage />
-    </NuxtLayout>
-  </main>
+
+  <NuxtLayout>
+    <NuxtPage />
+  </NuxtLayout>
 </template>

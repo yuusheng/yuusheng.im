@@ -8,20 +8,20 @@ function toggleColorMode() {
 </script>
 
 <template>
-  <header flex="~" text="[1.15rem]" lt-sm:mx10 m="x30 y5" items-center justify-between>
+  <header flex="~" text="[1.15rem]" p="x6 y5" items-center justify-between>
     <div relative>
-      <div class="avatar" @click="router.push('/')" />
+      <div class="avatar cursor-pointer" @click="router.push('/')" />
     </div>
 
     <div flex lt-sm:hidden initial>
       <NuxtLink to="/posts" class="navigate-btn">
-        posts
+        Posts
       </NuxtLink>
       <NuxtLink to="/photo" class="navigate-btn">
-        photo
+        Photo
       </NuxtLink>
       <NuxtLink to="project" class="navigate-btn" @click="router.push('project')">
-        project
+        Project
       </NuxtLink>
       <button class="navigate-btn" @click="toggleColorMode">
         <i i-ri-moon-fill hover:i-ri-moon-line dark:i-ri-sun-fill hover:dark:i-ri-sun-line />
@@ -38,9 +38,6 @@ function toggleColorMode() {
 .avatar {
   width: 3.5rem;
   height: 3.5rem;
-  position: absolute;
-  top: -1.75rem;
-  left: -1.75rem;
   background-size: 100%;
   background-repeat: no-repeat;
   background-image: url(../assets/avatar.svg);

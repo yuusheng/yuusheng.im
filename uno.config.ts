@@ -12,12 +12,14 @@ export default defineConfig({
     presetAttributify(),
     presetWebFonts({
       fonts: {
-        sans: 'Outfit:400,700',
+        outfit: 'Outfit:400,700',
+        sans: 'DM Sans',
       },
       provider: 'google',
     }),
   ],
   shortcuts: [{
     'navigate-btn': 'px2 pt1 pb1.5 my2 rounded',
+    'essay': 'max-w-80ch',
   }],
 })

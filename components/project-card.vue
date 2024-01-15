@@ -14,7 +14,7 @@ function handleClick() {
 
 <template>
   <div
-    w90 p="1.5" flex items-center rounded spacex3 bg="hover:gray1/50"
+    w90 p="1.5" flex items-center rounded space-x-3 bg="hover:gray1/50"
     @click="handleClick"
   >
     <img h13 w13 rounded bg="gray3/40" :src="logo">
