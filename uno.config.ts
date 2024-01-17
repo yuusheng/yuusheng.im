@@ -21,5 +21,6 @@ export default defineConfig({
   shortcuts: [{
     'navigate-btn': 'px2 pt1 pb1.5 my2 rounded',
     'essay': 'max-w-80ch',
+    'essay-list': 'text-4 line-height-4 text-warm-gray-800 dark:text-warm-gray-100 op-70 hover:op-100',
   }],
 })

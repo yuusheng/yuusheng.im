@@ -1,17 +1,10 @@
 <script setup lang="ts">
-const { data: navigation } = await useAsyncData('navigation', () => {
-  return fetchContentNavigation()
-})
-const catalogue = (navigation.value || []).map(v => ({
-  title: v._path.replace('/', ''),
-  path: v._path,
-}))
 </script>
 
 <template>
   <main my-20 px-6 font-outfit>
     <article essay m-auto>
-      <h1 text-6xl mb3 px-auto>
+      <h1 text-6xl font-700 mb3 px-auto>
         Hi!
       </h1>
       <h2 text-4xl mb4 px-auto>
@@ -26,8 +19,6 @@ const catalogue = (navigation.value || []).map(v => ({
       <ContactRect />
     </article>
   </main>
-
-  <!-- <TitleCardList :posts="catalogue" /> -->
 </template>
 
 <style scoped>

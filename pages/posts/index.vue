@@ -3,16 +3,22 @@ const posts = await queryContent<PostContent>().find()
 </script>
 
 <template>
-  <div m="x5 sm:x40 y10" flex="~ gap-4 col">
-    <NuxtLink
-      v-for="post in posts" :key="post._path"
-      :to="`/posts${post._path}`"
-      flex="~ gap-3"
-    >
-      <span text-xl>{{ post.title }}</span>
-      <span text="warm-gray/70">
-        {{ post.date ? $dayjs(post.date).format('YYYY-MM-DD') : '' }}
-      </span>
-    </NuxtLink>
-  </div>
+  <main m="x6 y10">
+    <div max-w-60ch flex="~ gap-5 col" m="x-auto t-10" pt-30 relative>
+      <div text="8xl stroke-1 stroke-warm-gray/60 transparent" font-serif absolute top-0 cursor-none z--1>
+        Yuusheng's
+      </div>
+      <NuxtLink
+        v-for="post in posts" :key="post._path"
+        :to="`/posts${post._path}`"
+        flex="~ gap-3"
+        essay-list
+      >
+        <span text="18px">{{ post.title }}</span>
+        <span text="warm-gray/70">
+          {{ post.date ? $dayjs(post.date).format('MMMM D, YYYY') : '' }}
+        </span>
+      </NuxtLink>
+    </div>
+  </main>
 </template>

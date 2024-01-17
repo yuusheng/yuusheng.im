@@ -5,9 +5,10 @@ const path = computed(() => route.params.name as string)
 const content = await queryContent<PostContent>(path.value).findOne()
 </script>
 
+u
 <template>
-  <div w-full>
-    <article p="x5 md:x15 y8" mx-auto>
+  <div w-full p="x5 y8">
+    <article max-w-80ch mx-auto>
       <div h-60 flex="~">
         <Toc :toc="content.body?.toc" />
         <div>

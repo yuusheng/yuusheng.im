@@ -9,7 +9,7 @@ useHead({
     { name: 'description', content: 'yuusheng, developer, posts, frontend' },
   ],
   bodyAttrs: {
-    class: ['dark:bg-black', 'dark:color-warm-gray-50', 'font-sans'],
+    class: ['dark:bg-black', 'dark:color-warm-gray-50', 'font-sans', 'transition-200'],
   },
 })
 </script>
