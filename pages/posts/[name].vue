@@ -5,7 +5,6 @@ const path = computed(() => route.params.name as string)
 const content = await queryContent<PostContent>(path.value).findOne()
 </script>
 
-u
 <template>
   <div w-full p="x5 y8">
     <article max-w-80ch mx-auto>

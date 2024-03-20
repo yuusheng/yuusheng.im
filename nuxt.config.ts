@@ -7,7 +7,13 @@ export default defineNuxtConfig({
     '@vueuse/nuxt',
     '@nuxtjs/color-mode',
     'dayjs-nuxt',
+    '@nuxt/eslint',
   ],
+  eslint: {
+    config: {
+      stylistic: true,
+    },
+  },
   content: {
     highlight: {
       theme: 'github-light',
