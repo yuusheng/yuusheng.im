@@ -9,7 +9,7 @@ const content = await queryContent<PostContent>(path.value).findOne()
   <div w-full p="x5 y8">
     <article max-w-80ch mx-auto>
       <div h-60 flex="~">
-        <Toc :toc="content.body?.toc" />
+        <ContentToc :toc="content.body?.toc" />
         <div>
           <h1 text-5xl font-900>
             {{ content.title }}
