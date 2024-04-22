@@ -20,7 +20,7 @@ const contactList = [
   { link: 'mailto:hi@yuusheng.im',
     icon: 'i-ri-at-fill',
     title: '',
-    classes: 'hover:bg-[linear-gradient(#3c7aeb,#5bbff6)] ',
+    classes: 'hover:bg-gradient-linear bg-gradient-from-[#3c7aeb] bg-gradient-to-[#5bbff6]',
   },
 ]
 </script>
