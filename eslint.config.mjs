@@ -1,7 +1,6 @@
 import withNuxt from './.nuxt/eslint.config.mjs'
 
-export default [
-  ...withNuxt,
+export default withNuxt(
   {
     files: ['**/*.vue'],
     rules: {
@@ -16,4 +15,4 @@ export default [
       '@typescript-eslint/no-explicit-any': 'off',
     },
   },
-]
+)
