@@ -3,7 +3,7 @@ const route = useRoute()
 const path = computed(() => route.params.name as string)
 
 const { data: content } = await useAsyncData(route.path, () => {
-  return queryCollection('docs').path(`/${path.value}`).first()
+  return queryCollection('posts').path(`/${path.value}`).first()
 })
 </script>
 
