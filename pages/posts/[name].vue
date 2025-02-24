@@ -2,12 +2,14 @@
 const route = useRoute()
 const path = computed(() => route.params.name as string)
 
-const content = await queryContent<PostContent>(path.value).findOne()
+const { data: content } = await useAsyncData(route.path, () => {
+  return queryCollection('docs').path(`/${path.value}`).first()
+})
 </script>
 
 <template>
   <div w-full p="x5 y8">
-    <article max-w-80ch mx-auto>
+    <article v-if="content" max-w-80ch mx-auto>
       <div h-60 flex="~">
         <ContentToc :toc="content.body?.toc" />
         <div>
@@ -17,7 +19,10 @@ const content = await queryContent<PostContent>(path.value).findOne()
           <div>{{ content.description }}</div>
         </div>
       </div>
-      <ContentDoc class="post-container scroll-smooth" :path="path" />
+      <ContentRenderer :value="content" />
     </article>
+    <div v-else>
+      not found
+    </div>
   </div>
 </template>
