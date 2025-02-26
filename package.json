@@ -24,7 +24,8 @@
   },
   "dependencies": {
     "@nuxtjs/color-mode": "^3.5.1",
-    "dayjs-nuxt": "^2.1.11"
+    "dayjs-nuxt": "^2.1.11",
+    "gsap": "^3.12.7"
   },
   "pnpm": {
     "onlyBuiltDependencies": [

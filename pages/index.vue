@@ -15,7 +15,7 @@
         or yuusheng.
       </h2>
       <p>A software engineer / music lover / amateur photographer / ...</p>
-      <p>Volunteer to be a slash youth.</p>
+      <p>A slash youth.</p>
       <ContactRect />
     </article>
   </main>
