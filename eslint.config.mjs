@@ -15,4 +15,9 @@ export default withNuxt(
       '@typescript-eslint/no-explicit-any': 'off',
     },
   },
+  {
+    rules: {
+      '@stylistic/semi': ['error', 'never'],
+    },
+  },
 )
