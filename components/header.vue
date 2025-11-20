@@ -40,10 +40,7 @@ function toggleColorMode() {
   height: 3.5rem;
   background-size: 100%;
   background-repeat: no-repeat;
-  background-image: url(../assets/avatar.svg);
-}
-
-.dark .avatar {
-  background-image: url(../assets/avatar-dark.svg);
+  background-image: url(~/assets/avatar.jpg);
+  border-radius: 50%;
 }
 </style>
