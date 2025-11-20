@@ -9,9 +9,9 @@ useHead({
   bodyAttrs: {
     class: [
       'dark:bg-black',
-      'dark:color-warm-gray-50',
+      'dark:text-stone-50',
       'font-sans',
-      'transition-200',
+      'transition-all duration-200',
     ],
   },
 })

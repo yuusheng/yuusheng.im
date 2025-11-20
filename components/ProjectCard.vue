@@ -14,12 +14,12 @@ function handleClick() {
 
 <template>
   <div
-    w90 p="1.5" flex items-center rounded space-x-3 bg="hover:gray1/50"
+    class="w-[22.5rem] p-1.5 flex items-center rounded space-x-3 hover:bg-gray-100/50"
     @click="handleClick"
   >
-    <img h13 w13 rounded bg="gray3/40" :src="logo">
-    <div spacey2>
-      <div text-5>
+    <img class="h-[3.25rem] w-[3.25rem] rounded bg-gray-300/40" :src="logo">
+    <div class="space-y-2">
+      <div class="text-xl">
         {{ title }} <a :href="github" target="_blank" i-ri-github-fill @click="(e) => e.stopPropagation()" />
       </div>
       <div text-3>

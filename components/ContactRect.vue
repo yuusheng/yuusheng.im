@@ -18,18 +18,16 @@ const contactList = [
 </script>
 
 <template>
-  <div mt10 flex>
+  <div class="mt-10 flex">
     <a
       v-for="contact of contactList"
       :key="contact.icon"
       :href="contact.link"
       target="_blank"
-      flex="~ items-center"
-      p="x1.8 y1" m="r2.4" text-xl hover:text-white
-      bg="#d0d0d040" rounded
+      class="flex items-center px-[0.45rem] py-[0.25rem] mr-[0.6rem] text-xl hover:text-white bg-[#d0d0d040] rounded"
       :class="contact.classes"
     >
-      <div :class="contact.icon" />
+      <Icon :name="contact.icon" />
       <span v-if="contact.title" ml-1>{{ contact.title }}</span>
     </a>
   </div>

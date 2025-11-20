@@ -2,17 +2,19 @@
 </script>
 
 <template>
-  <main font-outfit>
+  <UiSvgRowSvg class="text-gray-200/20" />
+
+  <main class="font-outfit">
     <div class="container">
-      <div class="relative border-x-1 border-x-gray/20 aspect-ratio-24/12 grid grid-rows-12 grid-cols-24">
+      <div class="relative border-x-1 border-gray-200/20 aspect-[24/12] grid grid-rows-12 " style="grid-template-columns: repeat(24, 1fr);">
         <UiHeaderBg class="-z-1" />
-        <article essay class="grid-row-3/14 grid-col-3">
-          <h1 text-6xl font-700 mb3 px-auto>
+        <article class="col-[3/18] row-[1/-1] flex flex-col justify-center z-10">
+          <h1 class="text-6xl font-bold mb-3">
             Hi!
           </h1>
-          <h2 text-4xl mb4 px-auto>
+          <h2 class="text-4xl mb-4">
             I'm
-            <code p="x1 y0.5" bg="gray-2/60" text-3xl text-black rounded>
+            <code class="p-x1 py-0.5 bg-gray-200/60 text-3xl text-black rounded">
               <span class="code">`</span>Ethan<span class="code">`</span>
             </code>
             or yuusheng.
@@ -24,7 +26,7 @@
       </div>
     </div>
 
-    <UiSvgRowSvg class="color-gray/20" />
+    <UiSvgRowSvg class="text-gray-200/20" />
   </main>
 </template>
 

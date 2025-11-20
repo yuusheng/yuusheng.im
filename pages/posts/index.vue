@@ -16,17 +16,16 @@ useGsap(() =>
 </script>
 
 <template>
-  <main m="x6 y10">
-    <div max-w-60ch flex="~ gap-5 col" m="x-auto t-10" pt-30 relative>
-      <div text="8xl stroke-1 stroke-warm-gray/60 transparent" font-serif absolute top-0 cursor-none z--1>
+  <main class="mx-6 my-10">
+    <div class="max-w-[60ch] flex flex-col gap-5 mx-auto mt-10 pt-[7.5rem] relative">
+      <div class="text-8xl stroke-1 stroke-stone-400/60 transparent font-serif absolute top-0 cursor-none z-[-1]">
         Yuusheng's
       </div>
       <NuxtLink
-        v-for="post in posts" :key="post.path" class="post" :to="`/posts${post.path}`" flex="~ gap-3"
-        essay-list
+        v-for="post in posts" :key="post.path" class="post flex gap-3 essay-list" :to="`/posts${post.path}`"
       >
-        <span text="18px">{{ post.title }}</span>
-        <span text="warm-gray/70">
+        <span class="text-[18px]">{{ post.title }}</span>
+        <span class="text-stone-400/70">
           {{ post.date ? $dayjs(post.date).format('MMMM D, YYYY') : '' }}
         </span>
       </NuxtLink>

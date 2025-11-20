@@ -8,12 +8,12 @@ function toggleColorMode() {
 </script>
 
 <template>
-  <header flex="~" text="[1.15rem]" p="x6 y5" items-center justify-between>
+  <header class="flex text-[1.15rem] px-6 py-5 items-center justify-between">
     <div relative>
       <div class="avatar cursor-pointer" @click="router.push('/')" />
     </div>
 
-    <div flex lt-sm:hidden initial>
+    <div class="flex hidden sm:flex">
       <NuxtLink to="/posts" class="navigate-btn">
         Posts
       </NuxtLink>
@@ -24,12 +24,12 @@ function toggleColorMode() {
         Project
       </NuxtLink>
       <button class="navigate-btn" @click="toggleColorMode">
-        <i i-ri-moon-fill hover:i-ri-moon-line dark:i-ri-sun-fill hover:dark:i-ri-sun-line />
+        <Icon :name="color.preference === 'dark' ? 'i-ri-sun-fill' : 'i-ri-moon-fill'" />
       </button>
     </div>
 
-    <div navigate-btn sm:hidden initial>
-      <div cursor-pointer i-majesticons-more-menu-vertical />
+    <div class="navigate-btn sm:hidden">
+      <Icon name="i-majesticons-more-menu-vertical" class="cursor-pointer" />
     </div>
   </header>
 </template>

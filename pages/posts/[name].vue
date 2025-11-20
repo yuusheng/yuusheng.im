@@ -8,12 +8,12 @@ const { data: content } = await useAsyncData(route.path, () => {
 </script>
 
 <template>
-  <div w-full p="x5 y8">
-    <article v-if="content" max-w-80ch mx-auto>
-      <div h-60 flex="~">
+  <div class="w-full px-5 py-8">
+    <article v-if="content" class="max-w-[80ch] mx-auto">
+      <div class="h-60 flex">
         <ContentToc :toc="content.body?.toc" />
         <div>
-          <h1 text-5xl font-900>
+          <h1 class="text-5xl font-extrabold">
             {{ content.title }}
           </h1>
           <div>{{ content.description }}</div>
