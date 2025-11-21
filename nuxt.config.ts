@@ -12,6 +12,9 @@ export default defineNuxtConfig({
     mode: 'css',
     cssLayer: 'base',
     class: 'align-middle',
+    serverBundle: {
+      collections: ['ri'],
+    },
   },
 
   modules: [
