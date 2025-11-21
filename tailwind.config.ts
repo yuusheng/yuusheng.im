@@ -3,6 +3,7 @@ import plugin from 'tailwindcss/plugin'
 
 export default <Partial<Config>>{
   safelist: ['align-middle'],
+  darkMode: 'class',
   theme: {
     extend: {
       fontFamily: {
@@ -45,6 +46,8 @@ export default <Partial<Config>>{
         },
         '.container': {
           marginInline: 'auto',
+        },
+        '.border-x': {
           borderInline: '1px rgb(229 231 235 / 0.2) solid',
         },
       })

@@ -5,7 +5,7 @@
   <UiSvgRowSvg class="text-gray-200/20" />
 
   <main class="font-outfit">
-    <div class="container">
+    <div class="container border-x">
       <div class="relative border-x-1 border-gray-200/20 aspect-[24/12] grid grid-rows-12 " style="grid-template-columns: repeat(24, 1fr);">
         <UiHeaderBg class="-z-1" />
         <article class="col-[3/18] row-[1/-1] flex flex-col justify-center z-10">
