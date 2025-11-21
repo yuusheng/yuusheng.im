@@ -10,5 +10,5 @@
 - 非标准用法在ESM下的解决方案：
   - `__filename` `__dirname`: import.meta.url
   - process.env: import.meta.env
-  - 取消 Node.js polyfill 
+  - 取消 Node.js polyfill
 - JSON 文件tree shaking
