@@ -1,7 +1,7 @@
 <script setup lang="ts">
 useHead({
   title: 'yuusheng',
-  link: [{ rel: 'icon', href: '/favicon.png' }],
+  link: [{ rel: 'icon', href: '/favicon.jpg' }],
   meta: [
     { name: 'author', content: 'yuusheng' },
     { name: 'description', content: 'yuusheng, developer, posts, frontend' },
