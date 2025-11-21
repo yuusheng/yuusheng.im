@@ -10,7 +10,7 @@ const router = useRouter()
 
 <template>
   <div
-    h10 w30 p="x2 y3" bg-red rounded cursor-pointer
+    class="h-[2.5rem] w-[7.5rem] px-2 py-3 bg-red-500 rounded cursor-pointer"
     @click="router.push(`/posts?title=${post.title}`)"
   >
     <span>{{ post.title }}</span>

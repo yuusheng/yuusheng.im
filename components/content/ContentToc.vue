@@ -11,13 +11,12 @@ defineProps<{
     <li
       v-for="title in toc?.links"
       :key="title.id"
-      text="xs"
-      color="black/60 dark:warm-gray-100/70"
+      class="text-xs text-black/60 dark:text-stone-100/70"
     >
       <a :href="`#${title.id}`" class="hover:text-black dark:hover:text-warm-gray-100">{{ title.text }}</a>
 
-      <div v-for="subTitle in title.children" :key="subTitle.id" pl3 text="hover:black dark:hover:warm-gray-100">
-        <i i-tabler-point-filled text-xs />
+      <div v-for="subTitle in title.children" :key="subTitle.id" class="pl-3 hover:text-black dark:hover:text-stone-100">
+        <i i-tabler-point-filled class="text-xs" />
         <a :href="`#${subTitle.id}`">{{ subTitle.text }}</a>
       </div>
     </li>

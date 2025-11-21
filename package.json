@@ -13,14 +13,13 @@
     "@antfu/eslint-config": "^3.7.3",
     "@iconify/json": "^2.2.256",
     "@nuxt/content": "^3.2.1",
-    "@nuxt/eslint": "0.5.7",
-    "@unocss/nuxt": "^66.5.6",
+    "@nuxt/icon": "2.1.0",
+    "@nuxtjs/tailwindcss": "6.14.0",
     "@vueuse/core": "^14.0.0",
     "@vueuse/nuxt": "^14.0.0",
     "eslint": "9.12.0",
     "nuxt": "^4.2.1",
-    "typescript": "^5.6.2",
-    "unocss": "^66.5.6"
+    "typescript": "^5.6.2"
   },
   "dependencies": {
     "@nuxtjs/color-mode": "^3.5.1",

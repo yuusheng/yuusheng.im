@@ -8,20 +8,29 @@ export default defineNuxtConfig({
     },
   },
 
+  icon: {
+    mode: 'css',
+    cssLayer: 'base',
+    class: 'align-middle',
+    serverBundle: {
+      collections: ['ri'],
+    },
+  },
+
   modules: [
-    '@unocss/nuxt',
+    '@nuxtjs/tailwindcss',
     '@nuxt/content',
     '@vueuse/nuxt',
     '@nuxtjs/color-mode',
     'dayjs-nuxt',
+    '@nuxt/icon',
   ],
 
   colorMode: { classSuffix: '' },
 
   css: [
-    '@unocss/reset/tailwind.css',
-    '~/styles/post.css',
-    '~/styles/global.css',
+    '~/assets/css/post.css',
+    '~/assets/css/global.css',
   ],
 
   compatibilityDate: '2025-02-24',
