@@ -23,8 +23,10 @@
           <p>A slash youth.</p>
           <ContactRect />
         </article>
-        <div class="z-10 col-[16/-1] row-[1/-1] grid grid-cols-9 grid-rows-12">
-          <AsciiImage class="col-[2/-1] row-[4/-4] translate-x-[0.5px]" />
+        <div class="z-10 col-[16/-3] row-[1/-1] grid grid-cols-7 grid-rows-12">
+          <UiLCornerWrapper class="col-[2/-1] row-[4/-4] translate-x-[0.5px]">
+            <AsciiImage />
+          </UiLCornerWrapper>
         </div>
       </div>
     </div>
