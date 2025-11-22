@@ -23,7 +23,7 @@ const contactList = [
       :key="contact.icon"
       :href="contact.link"
       target="_blank"
-      class="flex items-center px-[0.45rem] py-[0.25rem] text-xl hover:text-white bg-[#d0d0d040] rounded"
+      class="flex items-center rounded border border-solid border-gray-200/20 bg-black px-[0.45rem] py-1 text-xl hover:text-white"
       :class="contact.classes"
     >
       <Icon :name="contact.icon" />

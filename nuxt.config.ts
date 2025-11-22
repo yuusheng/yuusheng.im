@@ -1,4 +1,3 @@
-// https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
   devtools: {
     enabled: true,
@@ -24,9 +23,10 @@ export default defineNuxtConfig({
     '@nuxtjs/color-mode',
     'dayjs-nuxt',
     '@nuxt/icon',
+    'motion-v/nuxt',
   ],
 
-  colorMode: { classSuffix: '' },
+  colorMode: { classSuffix: '', storage: 'cookie' },
 
   css: [
     '~/assets/css/post.css',

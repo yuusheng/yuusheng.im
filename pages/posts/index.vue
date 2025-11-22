@@ -1,24 +1,14 @@
 <script setup lang="ts">
-import gsap from 'gsap'
-import { useGsap } from '~/composables/gsap'
-
 const route = useRoute()
 const { data: posts } = await useAsyncData(route.path, () => {
   return queryCollection('posts').all()
 })
-
-useGsap(() =>
-  gsap.from('.post', {
-    x: '-10',
-    stagger: 0.05,
-  }),
-)
 </script>
 
 <template>
   <main class="mx-6 my-10">
-    <div class="max-w-[60ch] flex flex-col gap-5 mx-auto mt-10 pt-[7.5rem] relative">
-      <div class="text-8xl stroke-1 stroke-stone-400/60 transparent font-serif absolute top-0 cursor-none z-[-1]">
+    <div class="relative mx-auto mt-10 flex max-w-[60ch] flex-col gap-5 pt-[7.5rem]">
+      <div class="transparent absolute top-0 z-[-1] cursor-none stroke-stone-400/60 stroke-1 font-serif text-8xl">
         Yuusheng's
       </div>
       <NuxtLink

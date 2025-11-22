@@ -21,7 +21,7 @@ const projects: Project[] = [
 </script>
 
 <template>
-  <div class="mt-[7.5rem] ml-[7.5rem] flex flex-wrap">
+  <div class="ml-[7.5rem] mt-[7.5rem] flex flex-wrap">
     <ProjectCard
       v-for="project of projects"
       :key="project.title"

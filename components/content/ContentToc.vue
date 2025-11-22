@@ -13,7 +13,7 @@ defineProps<{
       :key="title.id"
       class="text-xs text-black/60 dark:text-stone-100/70"
     >
-      <a :href="`#${title.id}`" class="hover:text-black dark:hover:text-warm-gray-100">{{ title.text }}</a>
+      <a :href="`#${title.id}`" class="dark:hover:text-warm-gray-100 hover:text-black">{{ title.text }}</a>
 
       <div v-for="subTitle in title.children" :key="subTitle.id" class="pl-3 hover:text-black dark:hover:text-stone-100">
         <i i-tabler-point-filled class="text-xs" />
