@@ -8,7 +8,6 @@
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
     "lint": "eslint .",
-    "prepare": "node scripts/gen-ascii.mjs"
   },
   "dependencies": {
     "@nuxtjs/color-mode": "^4",
