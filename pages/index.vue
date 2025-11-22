@@ -14,17 +14,17 @@
           </h1>
           <h2 class="mb-4 text-4xl">
             I'm
-            <code class="p-x1 rounded bg-gray-200/60 py-0.5 text-3xl text-black">
+            <code class="p-x1 rounded bg-gray-200 py-0.5 text-3xl text-black">
               <span class="code">`</span>Ethan<span class="code">`</span>
             </code>
-            or yuusheng.
+            or <span class="italic">yuusheng</span>.
           </h2>
           <p>A software engineer / music lover / amateur photographer / ...</p>
           <p>A slash youth.</p>
           <ContactRect />
         </article>
-        <div class="z-10 col-[16/-1] row-[1/-1] grid grid-cols-6 grid-rows-6">
-          <AsciiImage class="col-[2/5] row-[2/5]" />
+        <div class="z-10 col-[16/-1] row-[1/-1] grid grid-cols-9 grid-rows-12">
+          <AsciiImage class="col-[2/-1] row-[4/-4] translate-x-[0.5px]" />
         </div>
       </div>
     </div>

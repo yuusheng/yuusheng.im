@@ -26,7 +26,7 @@ export default defineNuxtConfig({
     'motion-v/nuxt',
   ],
 
-  colorMode: { classSuffix: '' },
+  colorMode: { classSuffix: '', storage: 'cookie' },
 
   css: [
     '~/assets/css/post.css',
